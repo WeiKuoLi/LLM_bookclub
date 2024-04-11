@@ -7,3 +7,4 @@
 tiny_llama.ipynb: tiny llama model inference notebook
 phi_1_5.ipynb: phi 1.5 base model with LoRA fine tuning to medical dataset
 oo_phi_1_5_medical_data_finetune.ipynb: Open-Orca phi-1.5 chat model with LoRA fine tuning to medical dataset
+gpt2_fromscratch.ipynb: full model finetuning of GPT-2 from scratch on python datascience dataset from github dump
