@@ -1,0 +1,9 @@
+# Welcome to Homework 1
+1. run inference model, change the prompt and see if the model outputs valid response
+2. LoRA finetuning on medical dataset: just run the notebooks, use 1% data for testing and than scale up you can try change dataset/model and add validation dataset in the training process
+3. GPT-2 training from scratch: just run the notebooks, use 1% data for testing and than scale up.  
+
+<directory>
+tiny_llama.ipynb: tiny llama model inference notebook
+phi_1_5.ipynb: phi 1.5 base model with LoRA fine tuning to medical dataset
+oo_phi_1_5_medical_data_finetune.ipynb: Open-Orca phi-1.5 chat model with LoRA fine tuning to medical dataset
