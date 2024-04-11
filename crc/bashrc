@@ -1,0 +1,55 @@
+#Check http://crc.nd.edu/wiki for login problems
+#Contact crcsupport@nd.edu if further problems
+
+if [ -r /opt/crc/Modules/current/init/bash ]; then
+        source /opt/crc/Modules/current/init/bash
+fi
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+
+
+source  ~/bin/alias.sh
+#source ~/bin/chg_dir.sh
+#source  ~/bin/pin.sh
+#source  ~/bin/prv.sh
+#Additional aliases
+alias l='ls'
+alias ls='ls --color=auto'
+alias ww='watch tail -25'
+alias ll='ls -l'
+alias qj='qsub job.sh'
+alias q='qstat -u wli22'
+alias w='cd ..'
+alias p='python3'
+module unload ompi
+module unload intel
+#Additional modules
+module load intel/19.0  
+module load ompi/4.0.1/intel/19.0
+#module load ompi
+module load xmgr
+module load python
+module load comsol
+
+export PATH=$PATH:/afs/crc.nd.edu/user/w/wli22/Private/QE/qe-7.2/bin
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/crc/c/conda/23.5.2/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/crc/c/conda/23.5.2/etc/profile.d/conda.sh" ]; then
+        . "/opt/crc/c/conda/23.5.2/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/crc/c/conda/23.5.2/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

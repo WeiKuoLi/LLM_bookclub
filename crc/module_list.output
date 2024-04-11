@@ -1,0 +1,6 @@
+Currently Loaded Modulefiles:
+ 1) CRC_default/1.1(default)   3) ompi/4.0.1/intel/19.0(default)   5) tcl/8.6.10 <aL>          7) comsol/5.4(default)  
+ 2) intel/19.0(default)        4) xmgr/5.1.25                      6) python/3.10.5(default)  
+
+Key:
+(symbolic-version)  <module-tag>  <aL>=auto-loaded  
